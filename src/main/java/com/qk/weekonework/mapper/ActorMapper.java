@@ -12,7 +12,10 @@ import java.util.List;
  */
 public interface ActorMapper {
     List<Actor> selAll();
+
     Boolean add(Actor actor);
+
     Boolean update(Actor actor);
+
     Boolean delete(Integer actor_id);
 }

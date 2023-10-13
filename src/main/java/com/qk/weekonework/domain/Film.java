@@ -41,6 +41,7 @@ public class Film {
     public List<Film> getFilmList() {
         return filmList;
     }
+
     public void setFilmList(List<Film> filmList) {
         this.filmList = filmList;
     }

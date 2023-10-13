@@ -18,14 +18,17 @@ public class Actor {
     private String last_name;
 
     private Date last_update;
+
     public List<Actor> getActorList() {
         return actorList;
     }
+
     public void setActorList(List<Actor> actorList) {
         this.actorList = actorList;
     }
 
     private List<Actor> actorList;
+
     public Actor() {
     }
 

@@ -36,7 +36,7 @@ public class ActorController {
 
 
     @GetMapping("/search")
-    public List<Actor> findAll(){
+    public List<Actor> findAll() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
         ActorMapper mapper = sqlSession.getMapper(ActorMapper.class);
@@ -47,8 +47,9 @@ public class ActorController {
         return actorList;
 
     }
+
     @GetMapping("/add")
-    public String add(Integer id, String firstName, String lastName){
+    public String add(Integer id, String firstName, String lastName) {
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
         ActorMapper mapper = sqlSession.getMapper(ActorMapper.class);
@@ -59,7 +60,7 @@ public class ActorController {
         String result;
         if (res) {
             result = "添加成功！~";
-        }else {
+        } else {
             result = "添加失败！~";
         }
 
@@ -69,8 +70,9 @@ public class ActorController {
         return result;
 
     }
+
     @GetMapping("/update")
-    public String update(Integer id, String firstName, String lastName){
+    public String update(Integer id, String firstName, String lastName) {
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
         ActorMapper mapper = sqlSession.getMapper(ActorMapper.class);
@@ -82,7 +84,7 @@ public class ActorController {
         String result;
         if (res) {
             result = "修改成功！~";
-        }else {
+        } else {
             result = "修改失败！~";
         }
         sqlSession.commit();
@@ -91,8 +93,9 @@ public class ActorController {
         return result;
 
     }
+
     @GetMapping("/delete")
-    public String delete(Integer id){
+    public String delete(Integer id) {
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
         ActorMapper mapper = sqlSession.getMapper(ActorMapper.class);
@@ -100,7 +103,7 @@ public class ActorController {
         String result;
         if (res) {
             result = "删除成功！~";
-        }else {
+        } else {
             result = "删除失败！~";
         }
         sqlSession.commit();

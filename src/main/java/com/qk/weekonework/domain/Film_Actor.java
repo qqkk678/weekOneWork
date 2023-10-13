@@ -19,6 +19,7 @@ public class Film_Actor {
     public List<Film> getFilmList() {
         return filmList;
     }
+
     public void setFilmList(List<Film> filmList) {
         this.filmList = filmList;
     }
@@ -28,6 +29,7 @@ public class Film_Actor {
     public List<Actor> getActorList() {
         return actorList;
     }
+
     public void setActorList(List<Actor> actorList) {
         this.actorList = actorList;
     }

@@ -1,8 +1,6 @@
 package com.qk.weekonework.controller;
 
-import com.qk.weekonework.domain.Actor;
 import com.qk.weekonework.mapper.ActorFilmMapper;
-import com.qk.weekonework.mapper.ActorMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -33,9 +31,8 @@ public class ActorFilmController {
     public ActorFilmController() throws IOException {
     }
 
-
     @GetMapping("/search")
-    public List findAll(){
+    public List findAll() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
         ActorFilmMapper mapper = sqlSession.getMapper(ActorFilmMapper.class);
