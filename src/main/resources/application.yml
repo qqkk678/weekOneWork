@@ -1,0 +1,5 @@
+spring:
+    datasource: driver-class-name:com.mysql.jdbc.Driver
+    url: jdbc:mysql://graduate-23f-db-database.dev.juyuansoft.com:3306/sakila
+    username: readonly
+    password: RD12345678

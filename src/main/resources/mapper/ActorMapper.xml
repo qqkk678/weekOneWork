@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qk.weekonework.mapper.ActorMapper">
+
+    <select id="selAll" resultType="com.qk.weekonework.domain.Actor">
+        select * from actor
+    </select>
+
+    <insert id="add" parameterType="com.qk.weekonework.domain.Actor">
+        insert into actor (first_name, last_name,last_update) values (#{first_name}, #{last_name}, #{last_update})
+    </insert>
+
+    <update id="update" parameterType="com.qk.weekonework.domain.Actor">
+        update actor set first_name=#{first_name}, last_name=#{last_name}, last_update=#{last_update} where actor_id=#{actor_id}
+    </update>
+
+    <delete id="delete" parameterType="com.qk.weekonework.domain.Actor">
+        delete from actor where actor_id=#{actor_id}
+    </delete>
+
+</mapper>
