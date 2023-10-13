@@ -20,6 +20,7 @@
 
     <mappers>
         <mapper resource="mapper/ActorMapper.xml"/>
+        <mapper resource="mapper/ActorFilmMapper.xml"/>
     </mappers>
 
 </configuration>

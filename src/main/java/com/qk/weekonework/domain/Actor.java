@@ -1,6 +1,7 @@
 package com.qk.weekonework.domain;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @ClassName Actor
@@ -17,7 +18,14 @@ public class Actor {
     private String last_name;
 
     private Date last_update;
+    public List<Actor> getActorList() {
+        return actorList;
+    }
+    public void setActorList(List<Actor> actorList) {
+        this.actorList = actorList;
+    }
 
+    private List<Actor> actorList;
     public Actor() {
     }
 
@@ -67,6 +75,7 @@ public class Actor {
                 ", first_name='" + first_name + '\'' +
                 ", last_name='" + last_name + '\'' +
                 ", last_update=" + last_update +
+                ", actorList=" + actorList +
                 '}';
     }
 }
