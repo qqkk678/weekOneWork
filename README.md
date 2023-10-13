@@ -8,6 +8,8 @@ Spring Web 数据库应用
   - 第一组：对单表的增删改查
   - 第二组：两表的关联查询
 
+
+- 第一组：对单表的增删改查
 启动界面
 ![image](https://github.com/qqkk678/weekOneWork/assets/100504650/6ac969de-2e8a-4126-bbf2-159e0e25e7cf)
 
@@ -23,3 +25,6 @@ Spring Web 数据库应用
 
 - 删除
   ![image](https://github.com/qqkk678/weekOneWork/assets/100504650/8b067717-3be6-435c-98a2-e74508a46a76)
+
+- 第二组：两表的关联查询
+![Uploading image.png…]()
