@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qk.weekonework.mapper.ActorFilmMapper">
+
+    <resultMap id="ActorFilmMap" type="com.qk.weekonework.domain.Film_Actor">
+        <id column="actor_id" property="actor_id"></id>
+        <id column="film_id" property="film_id"></id>
+        <result column="last_update" property="last_update"/>
+
+        <collection property="filmList" ofType="com.qk.weekonework.domain.Film">
+            <id column="film_id" property="film_id"/>
+            <result column="title" property="title"/>
+            <result column="description" property="description"/>
+            <result column="release_year" property="release_year"/>
+            <result column="language_id" property="language_id"/>
+            <result column="original_language_id" property="original_language_id"/>
+            <result column="rental_duration" property="rental_duration"/>
+            <result column="rental_rate" property="rental_rate"/>
+            <result column="length" property="length"/>
+            <result column="replacement_cost" property="replacement_cost"/>
+            <result column="special_features" property="special_features"/>
+            <result column="last_update" property="last_update"/>
+        </collection>
+
+        <collection property="actorList" ofType="com.qk.weekonework.domain.Actor">
+            <id column="actor_id" property="actor_id"/>
+            <result column="first_name" property="first_name"/>
+            <result column="last_name" property="last_name"/>
+            <result column="last_update" property="last_update"/>
+        </collection>
+    </resultMap>
+
+    <select id="selAll" resultMap="ActorFilmMap">
+        select * from actor,film,film_actor where actor.actor_id=film_actor.actor_id and film_actor.film_id=film.film_id
+    </select>
+
+</mapper>
