@@ -27,4 +27,5 @@ Spring Web 数据库应用
   ![image](https://github.com/qqkk678/weekOneWork/assets/100504650/8b067717-3be6-435c-98a2-e74508a46a76)
 
 - 第二组：两表的关联查询
-![Uploading image.png…]()
+  ![image](https://github.com/qqkk678/weekOneWork/assets/100504650/8d87df16-8295-45d3-83b5-aa656b6f227b)
+
